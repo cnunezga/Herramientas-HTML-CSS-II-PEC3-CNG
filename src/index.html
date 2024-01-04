@@ -1,27 +1,46 @@
 <!DOCTYPE html>
 
-<html>
+<html lang="en">
+
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
     <link rel="stylesheet" type="text/css" href="./assets/styles/main.scss"><!-- do not remove this line! -->
-    <title>UOC Boilerplate</title>
+    <link rel="icon" href="./assets/images/icons/favicon.ico" type="image/x-icon">
+    <title>Tennis League</title>
   </head>
-  <body>
-    <div class="uoc-container">
-      <picture>
-        <source srcset="./assets/images/logo.png?as=webp&width=350" type="image/webp" />
-        <img src="./assets/images/logo.png?width=350" alt="Universitat Oberta de Catalunya" class="uoc-logo" />
-      </picture>
-      <h1 class="uoc-title">Hello, UOC!</h1>
-      <p>
-        This is a starter template for the Advanced HTML and CSS Tools courses
-        from the Master's Program in Multimedia Applications and the Master's
-        Program in Web App and Website Development at the Universitat Oberta de
-        Catalunya.
-      </p>
-    </div>
+  
+  <body class="font-sans">
+    <include src="./views/header.html"></include>
+  
+    <!-- Main Content -->
+    <main class="relative text-base font-semibold">
+  
+      <!-- Grid CSS -->
+      <div class="text-xxs md:text-base grid grid-cols-12 grid-rows-12 w-4/5 h-full gap-1 -translate-y-2/3 absolute top-3/4 left-1/2 transform -translate-x-1/2 items-center justify-center xl:h-4/5 xl:grid-cols-14 xl:grid-rows-14 xl:-translate-y-3/4">
+        <span class="text-customBlue h-full bg-white justify-center items-center font-bold flex overflow-hidden col-start-2 row-start-2 xl:row-start-1 xl:col-start-4">T</span>
+        <span class="text-customBlue h-full bg-white justify-center items-center font-bold flex overflow-hidden col-start-3 row-start-2 xl:row-start-2 xl:col-start-5">E</span>
+        <span class="text-customBlue h-full bg-white justify-center items-center font-bold flex overflow-hidden col-start-4 row-start-2 xl:row-start-3 xl:col-start-6">N</span>
+        <span class="text-customBlue h-full bg-white justify-center items-center font-bold flex overflow-hidden col-start-5 row-start-2 xl:row-start-4 xl:col-start-7">N</span>
+        <span class="text-customBlue h-full bg-white justify-center items-center font-bold flex overflow-hidden col-start-6 row-start-2 xl:row-start-5 xl:col-start-8">I</span>
+        <span class="text-customBlue h-full bg-white justify-center items-center font-bold flex overflow-hidden col-start-7 row-start-2 xl:row-start-6 xl:col-start-9">S</span>
+        <span class="text-customBlue h-full bg-white justify-center items-center font-bold flex overflow-hidden col-start-5 row-start-4 xl:row-start-7 xl:col-start-7">L</span>
+        <span class="text-customBlue h-full bg-white justify-center items-center font-bold flex overflow-hidden col-start-6 row-start-4 xl:row-start-8 xl:col-start-8">E</span>
+        <span class="text-customBlue h-full bg-white justify-center items-center font-bold flex overflow-hidden col-start-7 row-start-4 xl:row-start-9 xl:col-start-9">A</span>
+        <span class="text-customBlue h-full bg-white justify-center items-center font-bold flex overflow-hidden col-start-8 row-start-4 xl:row-start-10 xl:col-start-10">G</span>
+        <span class="text-customBlue h-full bg-white justify-center items-center font-bold flex overflow-hidden col-start-9 row-start-4 xl:row-start-11 xl:col-start-11">U</span>
+        <span class="text-customBlue h-full bg-white justify-center items-center font-bold flex overflow-hidden col-start-10 row-start-4 xl:row-start-12 xl:col-start-12">E</span>
+        <include src="./views/grid.html"></include>
+      </div>
+      <!-- Grid CSS -->
+  
+      <!-- Background image -->
+      <img class="max-w-full h-auto" src="./assets/images/activities/tennisPoster.jpg" alt="tennisPoster">
+      <!-- Background image -->
+    </main>
+    <!-- Main Content -->
+  
     <include src="./views/footer.html"></include>
-    <script type="module" src="./assets/scripts/main.js"></script><!-- do not remove this line! -->
+    <script type="module" src="./assets/scripts/main.js"></script> <!-- do not remove this line! -->
   </body>
 </html>

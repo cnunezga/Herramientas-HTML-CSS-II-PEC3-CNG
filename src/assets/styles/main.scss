@@ -4,6 +4,13 @@
  */
 
 /**
+ * Import Tailwind 
+ */
+
+@tailwind base;
+@tailwind components;
+
+/**
  * Import variables
  */
 
@@ -17,13 +24,27 @@
 
 // @import "some-node-module";
 // @import "@some-company/some-node-module";
+@import 'npm:@fortawesome/fontawesome-free/css/all.css';
 
 /**
  * Import layouts
  * It's a best practice to use a different partial for each page
  */
 
-@import "layouts/home";
+/*@import "layouts/home";*/
+
+/**
+ * Import pages
+ * It's a best practice to use a different partial for each page
+ */
+
+@import "pages/members";
+
+/**
+ * Import Tailwind utilities
+ */
+
+@tailwind utilities;
 
 /**
  * Do NOT include anything else in this file!
