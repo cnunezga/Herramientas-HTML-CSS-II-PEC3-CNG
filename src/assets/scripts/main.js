@@ -22,7 +22,6 @@ const menuButtons = document.querySelectorAll('.navbar-toggler');
 menuButtons.forEach((button) => {
   const mobileMenu = button.nextElementSibling;
 
-  console.log(button);
   button.addEventListener('click', () => {
     mobileMenu.classList.toggle('hidden');
     button.children[0].classList.toggle('text-darkBlue', !button.children[0].classList.contains('text-darkBlue'));
