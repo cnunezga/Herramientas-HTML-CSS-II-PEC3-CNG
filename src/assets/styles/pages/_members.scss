@@ -1,3 +1,11 @@
 .member {
     @apply flex-shrink-0 flex-grow-0 w-full sm:w-1/4 sm:flex-1 sm:order-none sm:flex-auto;
 }
+
+.member__image {
+    @apply max-w-none h-auto transition-transform ease-in-out duration-300 transform hover:scale-110
+}
+
+.member__image--hover {
+    @apply absolute inset-0 z-[-1] opacity-0 transition-opacity duration-300 ease-in-out before:block bg-[color]
+}
